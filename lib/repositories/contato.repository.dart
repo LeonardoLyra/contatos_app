@@ -20,7 +20,7 @@ class ContatoRepository extends ChangeNotifier {
         'Content-Type': 'application/json; charset=UTF-8',
       },
     );
-    if (response.statusCode == 201) {
+    if (response.statusCode == 200) {
       Contato contato = Contato.fromJson(jsonDecode(response.body));
       this.contatos.add(contato);
       notifyListeners();

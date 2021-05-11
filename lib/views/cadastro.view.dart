@@ -1,12 +1,10 @@
 import 'dart:convert';
 
 import 'package:contatos_app/models/contato.model.dart';
+import 'package:contatos_app/repositories/contato.repository.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
-
-import '../repositories/contato.repository.dart';
-import '../repositories/contato.repository.dart';
 
 class CadastroView extends StatelessWidget {
   Contato contato = new Contato();
